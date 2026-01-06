@@ -2,8 +2,13 @@
 import { useState, useEffect } from "react"
 
 export default function fetchDatos() {
-    const [usuario, setUsuario] = useState(null)
+    const [usuario, setUsuario] = useState<Usuario | null>(null)
     const [cargando, setCargando] = useState(true)
+
+    type Usuario = {
+        name: string
+        email: string
+    }
 
     useEffect(() => {
         const fetchData = async () => {
