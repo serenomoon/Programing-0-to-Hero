@@ -5,15 +5,19 @@ import { useState, useEffect } from "react"
 export default function FetchAxiosDatos() {
     const [usuario, setUsuario] = useState(null)
     const [cargando, setCargando] = useState(true)
-    const [error, setError] = useState(null)
+    const [error, setError] = useState("")
 
     useEffect(() => {
         const fetchData = async () => {
             try {
                 const response = await axios.get('https://jsonplaceholder.typicode.com/users/1')
                 setUsuario(response.data) //no hace falta un .json, ya viene parseado
-            } catch (err) {
-                setError(err.message)
+            } catch (err ) {
+                if (axios.isAxiosError(err)) {
+                    setError(err.message)
+                } else {
+                    setError("Error inesperado")
+                }
             } finally {
                 setCargando(false)
             }
