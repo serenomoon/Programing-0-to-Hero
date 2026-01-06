@@ -3,9 +3,14 @@ import axios from 'axios'
 import { useState, useEffect } from "react"
 
 export default function FetchAxiosDatos() {
-    const [usuario, setUsuario] = useState(null)
+    const [usuario, setUsuario] = useState<Usuario | null>(null)
     const [cargando, setCargando] = useState(true)
     const [error, setError] = useState("")
+
+    type Usuario = {
+        name: string
+        email: string
+    }
 
     useEffect(() => {
         const fetchData = async () => {
