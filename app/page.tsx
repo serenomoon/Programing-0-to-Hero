@@ -23,6 +23,10 @@ export default function Home() {
 
         <li><Link href="/fetchDatos">Fetch de datos</Link></li>
         <li><Link href="/fetchAxiosDatos">Fetch de datos con Axios</Link></li>
+        <li><Link href="/jsx_VDOM">JSX y Virtual DOM</Link></li>
+
+        <li><Link href="/practicaExpress">Servidor Basico con Express</Link></li>
+        <li><Link href="/practicaEndPoints">Practica CRUD / EndPoints</Link></li>
       </ol>
     </div>
   )
