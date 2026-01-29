@@ -26,7 +26,12 @@ export default function Home() {
         <li><Link href="/jsx_VDOM">JSX y Virtual DOM</Link></li>
 
         <li><Link href="/practicaExpress">Servidor Basico con Express</Link></li>
-        <li><Link href="/practicaEndPoints">Practica CRUD / EndPoints</Link></li>
+        <li><Link href="/practicaEndPoints">CRUD / EndPoints</Link></li>
+        <li><Link href="/practicaReqResNext">req, res y next()</Link></li>
+        <li><Link href="/practicaConexionDB">Conexion a DB</Link></li>
+        <li><Link href="/practicaHerramientasBackend">Herramientas Backend</Link></li>
+        <li><Link href="/practicaOptimizacionRenders">Optimizacion de Renders</Link></li>
+        <li><Link href="/practicaEstadoGlobal">Estado Global</Link></li>
       </ol>
     </div>
   )
