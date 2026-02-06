@@ -1,6 +1,6 @@
 "use client";
 
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../estado-global/context/ThemeContext";
 
 export const CambiarFondo = () => {
   const { cambiarBg } = useTheme();

@@ -1,12 +1,8 @@
 "use client";
 
-import { useTheme } from "../context/ThemeContext";
+import { useTheme } from "../estado-global/context/ThemeContext";
 
-export default function ThemeWrapper({
-  children,
-}: {
-  children: React.ReactNode;
-}) {
+export default function ThemeWrapper({children,}: {children: React.ReactNode;}) {
   const { bgColor } = useTheme();
 
   return (
