@@ -1,5 +1,7 @@
 "use client"
 
+import { CambiarFondo } from "@/app/components/CambiarFondo";
+import { ContadorZustand } from "@/app/components/ContadorZustand";
 import Link from "next/link";
 import { useState, createContext, useContext } from "react";
 import { Prism as SyntaxHighlighter } from "react-syntax-highlighter";
@@ -315,11 +317,19 @@ const useStore = create(set => ({
                 </ul>
             </div>
 
+            <div>
+                <CambiarFondo />
+
+                <ContadorZustand />
+            </div>
+
             <div className="flex justify-center mt-2 mb-4">
                 <Link className="bg-amber-400/30 p-2 rounded-2xl text-amber-100" href="/">
                     Volver
                 </Link>
             </div>
+
+
         </>
     );
 }
