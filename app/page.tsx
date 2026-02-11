@@ -62,6 +62,8 @@ export default function Home() {
                 <li><Link href="/backend/practicaHerramientasBackend">Herramientas Backend</Link></li>
                 <li><Link href="/backend/practicaAuth">NextAuth + JWT</Link></li>
                 <li><Link href="/backend/practicaAuthJWT">Autenticacion JWT y Roles</Link></li>
+                <li><Link href="/backend/practicaGitAvanzado">Git y ramas</Link></li>
+                <li><Link href="/backend/practicaCICD">CI CD basico</Link></li>
               </ul>
             )}
           </li>
@@ -104,7 +106,12 @@ export default function Home() {
                 </li>
                 <li><Link href="/otros/fetchDatos">Fetch de datos</Link></li>
                 <li><Link href="/otros/fetchAxiosDatos">Fetch con Axios</Link></li>
-                <li><Link href="/otros/practicaTesting">Testing</Link></li>
+                <li><Link href="/otros/practicaTesting">Testing Jest y React Testing</Link></li>
+                <li><Link href="/otros/practicaTestingApi">Testing Api Jest + Supertest</Link></li>
+                <li><Link href="/otros/practicaDeploy">Deploy (Docker, Railway, Vercel)</Link></li>
+                <li><Link href="/otros/practicaSeguridadLogsSwagger">Logs, Seguridad y Documentacion</Link></li>
+                <li><Link href="/otros/practicaInglesTecnico">Ingles Técnico</Link></li>
+                <li><Link href="/otros/practicaComunicacionTecnica">Comunicacion y Documentacion Técnica</Link></li>
               </ul>
             )}
           </li>
